@@ -1,11 +1,11 @@
-import { Text, View, StyleSheet } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function Home() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.content}>
-        <Text>Hello</Text>
+        <Text>박주현 week1 과제</Text>
       </View>
     </SafeAreaView>
   );
