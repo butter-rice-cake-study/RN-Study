@@ -8,9 +8,11 @@
     "scheme": "rnstudy",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/expo.icon",
+      "bundleIdentifier": "com.eunjee001.rnstudy"
     },
     "android": {
+      "package": "com.eunjee001.rnstudy",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -39,6 +41,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "338b8c64-7221-4ffb-89a6-c7f6c196d61a"
+      }
+    },
+    "owner": "kyummy"
   }
 }
