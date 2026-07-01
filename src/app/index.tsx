@@ -15,10 +15,17 @@ const CARD_DATA = Array.from({ length: 25 }, (_, index) => ({
 // 화면 너비를 구해 마진을 제외한 카드 너비 계산
 const { width } = Dimensions.get('window');
 
+interface CardItemType {
+  id: string;
+  imageUrl: string;
+  title: string;
+  description: string;
+}
+
 export default function App() {
   
   // 2. 개별 카드 렌더링 함수
-  const renderCard = ({ item }) => (
+  const renderCard = ({ item }: { item: CardItemType }) => (
     <View style={styles.card}>
       <Image
         style={styles.cardImage}
